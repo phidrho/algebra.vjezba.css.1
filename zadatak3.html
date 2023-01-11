@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Login forma sa CSS-om - Zadatak 3 CSS</title>
+</head>
+<body>
+    <h2>Login Forma</h2>
+    <form action="/action_page.php" method="post">
+        <div>
+            <img src="maja.svg" alt="avatar">
+            <div>
+                <label for="uname">Korisničko ime</label>
+                <input id="uname" type="text" placeholder="Unesite korisničko ime" name="uname" required>
+                <label for="psw">Lozinka</label>
+                <input id="psw" type="password" placeholder="Unesite lozinku" name="psw" required>
+                <button type="submit">Login</button>
+                <label for="remember"><input id="remember" type="checkbox" checked name="remember">Zapamti me</label>
+            </div>
+        </div>
+    </form>
+    <div>
+        <button type="button">Odustani</button>
+        <span>Zaboravljena <a href="#">lozinka?</a></span>
+    </div>
+</body>
+</html>
