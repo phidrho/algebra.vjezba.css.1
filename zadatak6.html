@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 5 CSS</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: azure;
+        }
+
+        .git-logo {
+            height: 150px;
+            width: 150px;
+            background-color: #f06033;
+            border-radius: 15px;
+            position: relative;
+            transform: rotate(45deg);
+        }
+
+        .line1 {
+            height: 10px;
+            width: 110px;
+            background-color: white;
+            position: absolute;
+            top: 40px;
+        }
+
+        .line1:before {
+            content:"";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            top: -8px;
+            left: 33px;
+        }
+
+        .line1:after {
+            content:"";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            top: -8px;
+            left: 95px;
+        }
+
+        .line2 {
+            height: 10px;
+            width: 110px;
+            background-color: white;
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            transform: rotate(-135deg);
+        }
+
+        .line2::before {
+            content:"";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            top: -10px;
+            left: -2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="git-logo">
+        <div class="line1">
+            <div class="line2">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
