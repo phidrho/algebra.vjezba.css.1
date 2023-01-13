@@ -47,6 +47,10 @@
         div[data-lang$="proba"].pr5 {
             color: rgb(186, 207, 0);
         }
+
+        div[data-lang*="proba"].pr6 {
+            color: rgb(253, 186, 2);
+        }
     </style>
 </head>
 <body>
@@ -81,6 +85,10 @@
     <div class="pr5" data-lang="proba123 proba234">Hrvatski ili engleski latinični tekst</div>
 
 
+    <h2>Atributni selektor po diejlu vrijenosti parametra tj. atribut se nalazi <em>bilo gdje unutar vrijednosti</em></h2>
+    <div class="pr6" data-lang="proba">Hrvatski tekst</div>
+    <div class="pr6" data-lang="ovo je neka proba">Hrvatska latinica.</div>
+    <div class="pr6" data-lang="proba123 proba234">Hrvatski ili engleski latinični tekst</div>
 
 </body>
 </html>
