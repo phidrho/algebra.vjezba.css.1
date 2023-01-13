@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,17 +19,40 @@
             font-weight: bold;
         }
 
-        a[target="_blank"] {
+        a[target="_blank"].pr1 {
             color: red;
         }
+    
+        /* po zadanom je case sensitive, ali ako dodamo "i" na kraju onda je case insensitive */
+
+        /* PRIMJER - CASE SESITIVE */
+        a[href^="http"].pr2 {
+            color: green;
+        }
+
+        /* PRIMJER - CASE INSENSITIVE 
+        a[href^="http" i].pr2 {
+            color: green;
+        }
+        /**/
+
     </style>
 </head>
 <body>
     <h1>CSS - primjer 6 - atributni selektori</h1>
+    <h2>Atributni selektor - identičan atribut</h2>
     <ul>
-        <li>Link u istom prozoru: <a href="https://google.com">Google</a></li>
-        <li>Link u novom prozoru: <a href="https://wikipedia.org" target="_blank">Wikipedia</a></li>
-        <li>Link u istom prozoru: <a href="https://algebra.hr">Algebra</a></li>
+        <li>Link u istom prozoru: <a class="pr1" href="HTTPS://google.com">Google</a></li>
+        <li>Link u novom prozoru: <a class="pr1" href="https://wikipedia.org" target="_blank">Wikipedia</a></li>
+        <li>Link u istom prozoru: <a class="pr1" href="https://www.algebra.hr">Algebra</a></li>
     </ul>
+    <h2>Atributni selektor - atribut počinje sa (case sensitive)</h2>
+    <ul>
+        <li>Link u istom prozoru: <a class="pr2" href="HTTPS://google.com">Google</a></li>
+        <li>Link u novom prozoru: <a class="pr2" href="https://wikipedia.org" target="_blank">Wikipedia</a></li>
+        <li>Link u istom prozoru: <a class="pr2" href="https://www.algebra.hr">Algebra</a></li>
+    </ul>
+
+
 </body>
 </html>
