@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - primjer 6 - atributni selektori</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            color:magenta;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a[target="_blank"].pr1 {
+            color: red;
+        }
+    
+        /* po zadanom je case sensitive, ali ako dodamo "i" na kraju onda je case insensitive */
+
+        /* PRIMJER - CASE SESITIVE */
+        a[href^="http"].pr2 {
+            color: green;
+        }
+
+        /* PRIMJER - CASE INSENSITIVE 
+        a[href^="http" i].pr2 {
+            color: green;
+        }
+        /**/
+
+        div[moj-atribut~="prog"].pr3 {
+            color: cyan;
+        }
+
+        div[data-lang|="hr"].pr4 {
+            color: rgb(0, 207, 0);
+        }
+
+        div[data-lang$="proba"].pr5 {
+            color: rgb(186, 207, 0);
+        }
+
+        div[data-lang*="proba"].pr6 {
+            color: rgb(253, 186, 2);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS - primjer 6 - atributni selektori</h1>
+    <h2>Atributni selektor - identičan atribut</h2>
+    <ul>
+        <li>Link u istom prozoru: <a class="pr1" href="HTTPS://google.com">Google</a></li>
+        <li>Link u novom prozoru: <a class="pr1" href="https://wikipedia.org" target="_blank">Wikipedia</a></li>
+        <li>Link u istom prozoru: <a class="pr1" href="https://www.algebra.hr">Algebra</a></li>
+    </ul>
+
+    <h2>Atributni selektor - atribut počinje sa (case sensitive)</h2>
+    <ul>
+        <li>Link u istom prozoru: <a class="pr2" href="HTTPS://google.com">Google</a></li>
+        <li>Link u novom prozoru: <a class="pr2" href="https://wikipedia.org" target="_blank">Wikipedia</a></li>
+        <li>Link u istom prozoru: <a class="pr2" href="https://www.algebra.hr">Algebra</a></li>
+    </ul>
+
+    <h2>Atributni selektor - identični atribut se nalazi u elementu ili u listi</h2>
+    <div class="pr3" moj-atribut="prog">Samo tražena vrijednost</div>
+    <div class="pr3" moj-atribut="web prog front">Jedna od vrijednosti u listi</div>
+    <div class="pr3" moj-atribut="web programiranje">Dio jedne od vrijednosti</div>
+
+    <h2>Atributni selektor - atribut "počinje sa" i "počinje sa + crtica"</h2>
+    <div class="pr4" data-lang="hr">Hrvatski tekst</div>
+    <div class="pr4" data-lang="hr-Latn">Hrvatska latinica.</div>
+    <div class="pr4" data-lang="en-Lang hr-Lang">Hrvatski ili engleski latinični tekst</div>
+
+    <h2>Atributni selektor - atribut "završava sa"</h2>
+    <div class="pr5" data-lang="proba">Upisan identičan atribut</div>
+    <div class="pr5" data-lang="ovo je neka proba">Upisan identičan atribut na kraju</div>
+    <div class="pr5" data-lang="proba123 proba234">Upisan sličan atribut</div>
+
+    <h2>Atributni selektor po diejlu vrijenosti parametra tj. atribut se nalazi <em>bilo gdje unutar vrijednosti - čak i dio riječi - pogledaj zadnja dva primjera</em></h2>
+    <div class="pr6" data-lang="proba">Primjer sa identičnim atributom</div>
+    <div class="pr6" data-lang="ovo je neka proba">Primjer sa riječi na kraju</div>
+    <div class="pr6" data-lang="proba123 proba234">Primjer sa dio riječi 1</div>
+    <div class="pr6" data-lang="probavam proba234">Primjer sa dio riječi 2</div>
+
+</body>
+</html>
