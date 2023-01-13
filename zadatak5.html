@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zadatak 5 CSS</title>
     <style>
-       
+       .netflix-logo {
+        width: 7vh;
+        height: 30vh;
+        background-color: #b1060f;
+        position: relative;
+       }
+
+       .netflix-logo:before {
+        content: "";
+        position: absolute;
+        width: 7vh;
+        height: 30vh;
+        background-color: #e50913;
+        transform: skew(20deg);
+        left: 5.5vh;
+        box-shadow: 0 0 2.5vh -1vh black;
+       }
+
+       .netflix-logo:after {
+            content: "";
+            position: absolute;
+            width: 7vh;
+            height: 30vh;
+            background-color: #b1060f;
+            left: 11vh;
+            z-index: -1;
+       }
+
     </style>
 </head>
 
 <body>
     <h1>Zadatak 5</h1>
-
+    <div class="netflix-logo"></div>
 
 </body>
-
 </html>
