@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 7 - tablica</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            border: 5px solid blue;
+            border-collapse: collapse;
+            min-height: 400px;
+        }
+
+        th,
+        td {
+            border: 2px solid blue;
+            min-width: 100px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        td.zuto {
+            background-color: yellow;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            background-color: none;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: cyan;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Primjer 8 - tablica</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td class="zuto" rowspan="4"><a href="https://www.algebra.hr/">A</a></td>
+                <td>B</td>
+                <td class="zuto" colspan="2">C</td>
+            </tr>
+            <tr>
+                <td colspan="3">D</td>
+            </tr>
+            <tr>
+                <td colspan="2">E</td>
+                <td rowspan="2">F</td>
+            </tr>
+            <tr>
+                <td class="zuto"><a href="https://www.google.com" target="_blank">G</a></td>
+                <td>H</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -35,6 +35,46 @@
             background-color: red;
             text-decoration: underline;
         }
+
+        a.vrsta1:link {
+            color: black;
+        }
+
+        a.vrsta1:visited {
+            color:  #0000CC;
+        }
+    
+        a.vrsta1:hover {
+            text-decoration: green wavy underline;
+        }
+    
+        a.vrsta1:active {
+            background-color: yellow;
+            color: black;
+        }
+
+        a.vrsta2 {
+            text-decoration: underline;
+        }
+
+        a.vrsta2:link {
+            color: #000000;
+        }
+
+        a.vrsta2:visited {
+            color: red;
+        }
+    
+        a.vrsta2:hover {
+            background-color: purple;
+            color: #ffffff;
+            text-decoration: underline dotted;
+        }
+    
+        a.vrsta2:active {
+            background-color: blue;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -44,18 +84,27 @@
         <br>
         <li><a href="https://www.google.com" target="_blank">Google</a></li>
     </ul>
-    <h1>Primjer 7b - pseudo klase za hover i active</h1>
-    <pre>PAZITI NA POREDAK:
 
-        1 2  34 
-       'love hate'
+    <h1>Primjer 7b - pseudo klase za hover i active</h1>
+    <strong><pre>PAZITI NA POREDAK:
+
+
+  'love hate' < podsjetnik za lakše zapamtiti
+   1 2  34    < redoslijed primjene
       
-        L V H A (link, visited, hover, active)
-      </pre>
+  L V H A (link, visited, hover, active)
+      </pre></strong>
     <ul>
         <li><a class="hovact" href="https://www.algebra.hr/">Algebra</a></li>
         <br>
         <li><a class="hovact"  href="https://www.google.com" target="_blank">Google</a></li>
+    </ul>
+
+    <h1>Primjer 7c - kombinacija pomoću klasa - klase vrsta1 i vrsta2</h1>
+    <ul>
+        <li><a class="vrsta1" href="https://www.algebra.hr/">Algebra</a></li>
+        <br>
+        <li><a class="vrsta2"  href="https://www.google.com" target="_blank">Google</a></li>
     </ul>
 </body>
 </html>
