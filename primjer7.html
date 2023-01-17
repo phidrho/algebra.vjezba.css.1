@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primjer 7 - pseudo klase za linkove</title>
+    <title>Primjer 7 - pseudo klase</title>
     <style>
         a:link {
             color: lightsalmon;
@@ -16,13 +16,46 @@
             color: magenta;
             background-color: yellow;
         }
+
+        /*
+        PAZITI NA POREDAK:
+
+          1 2  34 
+         'love hate'
+        
+          L V H A (link, visited, hover, active)
+        */
+        a.hovact:hover {
+            text-decoration: green wavy underline;
+            background-color: yellow;
+        }
+
+        a.hovact:active {
+            color: white;
+            background-color: red;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <h1>Primjer 7a - pseudo klase za linkove</h1>
     <ul>
         <li><a href="https://www.algebra.hr/">Algebra</a></li>
         <br>
         <li><a href="https://www.google.com" target="_blank">Google</a></li>
+    </ul>
+    <h1>Primjer 7b - pseudo klase za hover i active</h1>
+    <pre>PAZITI NA POREDAK:
+
+        1 2  34 
+       'love hate'
+      
+        L V H A (link, visited, hover, active)
+      </pre>
+    <ul>
+        <li><a class="hovact" href="https://www.algebra.hr/">Algebra</a></li>
+        <br>
+        <li><a class="hovact"  href="https://www.google.com" target="_blank">Google</a></li>
     </ul>
 </body>
 </html>
