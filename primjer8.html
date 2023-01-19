@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primjer 7 - pseudo elementi</title>
+    <style>
+        p.pr1::after {
+            content: " - Zapamti ovo!";
+            color: red;
+            background-color: yellow;
+        }
+
+        p.pr2::before {
+            content: "Ovo je važno > ";
+            color: red;
+            background-color: yellow;
+        }
+
+        p.pr3::first-letter {
+            color: red;
+            font-size: xx-large;
+        }
+
+        h3.pr4::first-letter, p.pr4::first-letter {
+            color: red;
+            font-size: xx-large;
+        }
+
+        p.pr5::first-line {
+            background-color: yellow;
+        }
+
+        p.pr6::first-letter {
+            color: red;
+            font-size: xx-large;
+        }
+
+        p.pr6::first-line {
+            color: blue;
+            font-variant: small-caps;
+        }
+
+        ::marker {
+            color: rebeccapurple;
+            font-size: xx-large;
+        }
+
+        .greek1 {
+            list-style-type: circle;
+        }
+    
+        .greek2 {
+            list-style-type: lower-roman;
+        }
+
+        ::selection {
+            color:red;
+            background: yellow; /* background je shortcut za više backgrounda, npr. background-color i background-image */
+        }
+    </style>
+</head>
+<body>
+    <h1>Primjer 8 - pseudo elementi</h1>
+
+    <h2>PR1 ::after</h2>
+    <p class="pr1">Moje ime je Pero</p>
+    <p class="pr1">Živim u Osijeku</p>
+
+    <h2>PR2 ::before</h2>
+    <p class="pr2">Moje ime je Pero</p>
+    <p class="pr2">Živim u Osijeku</p>
+
+    <h2>PR3 ::first-letter</h2>
+    <p class="pr3">Moje ime je Pero</p>
+    <p class="pr3">Živim u Osijeku</p>
+    <p class="pr3">Treći tekst</p>
+    <p class="pr3">Četvrti tekst</p>
+
+    <h3 class="pr4">PR4 ::first-letter - grupiranje više tagova</h3>
+    <p class="pr4">Moje ime je Pero</p>
+    <p class="pr4">Živim u Osijeku</p>
+    <p class="pr4">Treći tekst</p>
+    <p class="pr4">Četvrti tekst</p>
+
+    <h2>PR5 ::first-line - cilj zadatka je obojati prvu liniju teksta</h2>
+    <p class="pr5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque earum, amet laboriosam laudantium at autem, voluptate quo nam deserunt et odio placeat? Maxime doloribus ea dignissimos reiciendis necessitatibus ratione quos nulla! Distinctio fuga id provident, esse neque reiciendis optio ea. Aliquid dignissimos voluptates delectus quia eum tempora natus sit ratione. Facilis officia totam odit! Ex, voluptatibus nostrum, ab debitis ullam incidunt sit, excepturi molestiae saepe maxime corporis eaque? Aspernatur ea corrupti unde nesciunt labore possimus impedit maxime officiis, sed consequatur ut sunt id officia quibusdam blanditiis aperiam modi nemo nobis minima eos voluptates quam suscipit cupiditate facere. Quisquam necessitatibus beatae fuga ut cumque neque, nostrum dignissimos eum, voluptatum mollitia sit sapiente delectus dolorem doloribus! Voluptas totam amet, exercitationem voluptates modi incidunt quasi, dolorum deleniti neque nihil eos, unde expedita dicta sapiente nisi delectus! Ratione exercitationem obcaecati, officiis culpa quod neque nisi fuga molestias ad corporis praesentium esse tenetur? Maiores sit quas, perferendis corrupti nihil ab cupiditate odio unde, accusamus voluptatibus voluptatem facere, deleniti libero voluptas vel amet quidem explicabo? Magni dolore aut nobis ducimus cupiditate! Possimus voluptatibus consequuntur neque laboriosam sapiente. Perferendis, alias officia eos quidem debitis consectetur cum beatae aliquam vitae, ullam accusamus recusandae hic nulla eveniet numquam soluta vero quo. Quis debitis hic cumque reprehenderit rerum soluta eius ipsam, nulla distinctio at, nobis quam minima mollitia blanditiis dolor maiores fuga earum laborum voluptatem, nemo error dolore! Rem repudiandae placeat non, magni suscipit amet nihil molestiae omnis. Ipsam, iusto rem voluptatibus natus, illum voluptatem libero incidunt ab quod corporis deserunt minus, exercitationem aspernatur sapiente illo quia? Iure doloribus accusantium sint quam, aliquam blanditiis assumenda, debitis officiis labore vero voluptas eum ipsum natus id ut incidunt explicabo sit hic quisquam corrupti reprehenderit nisi. Assumenda quas, reprehenderit culpa quam tenetur quaerat. Ea consectetur officiis fugit eius excepturi numquam similique commodi laudantium doloremque est placeat tempore, fugiat vero aspernatur eveniet nobis dignissimos hic sequi ullam consequatur temporibus nihil obcaecati! Dignissimos distinctio itaque, impedit soluta vel voluptatum magni eaque iusto ea dolorem tempore, temporibus, sapiente laborum at? Quaerat quasi qui sit quae. Eum, earum dolorem minima fugit blanditiis repudiandae odio autem, temporibus possimus quisquam hic quis quos beatae saepe veniam commodi cum voluptatibus, inventore nostrum eligendi animi! Similique tempore iusto accusantium consequatur reiciendis explicabo amet pariatur eum saepe sit ducimus, odit error ratione placeat autem et quae hic rerum quidem magni laudantium voluptatem.</p>
+
+    <h2>PR6 ::first-letter + ::first-line</h2>
+    <p class="pr6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque earum, amet laboriosam laudantium at autem, voluptate quo nam deserunt et odio placeat? Maxime doloribus ea dignissimos reiciendis necessitatibus ratione quos nulla! Distinctio fuga id provident, esse neque reiciendis optio ea. Aliquid dignissimos voluptates delectus quia eum tempora natus sit ratione. Facilis officia totam odit! Ex, voluptatibus nostrum, ab debitis ullam incidunt sit, excepturi molestiae saepe maxime corporis eaque? Aspernatur ea corrupti unde nesciunt labore possimus impedit maxime officiis, sed consequatur ut sunt id officia quibusdam blanditiis aperiam modi nemo nobis minima eos voluptates quam suscipit cupiditate facere. Quisquam necessitatibus beatae fuga ut cumque neque, nostrum dignissimos eum, voluptatum mollitia sit sapiente delectus dolorem doloribus! Voluptas totam amet, exercitationem voluptates modi incidunt quasi, dolorum deleniti neque nihil eos, unde expedita dicta sapiente nisi delectus! Ratione exercitationem obcaecati, officiis culpa quod neque nisi fuga molestias ad corporis praesentium esse tenetur? Maiores sit quas, perferendis corrupti nihil ab cupiditate odio unde, accusamus voluptatibus voluptatem facere, deleniti libero voluptas vel amet quidem explicabo? Magni dolore aut nobis ducimus cupiditate! Possimus voluptatibus consequuntur neque laboriosam sapiente. Perferendis, alias officia eos quidem debitis consectetur cum beatae aliquam vitae, ullam accusamus recusandae hic nulla eveniet numquam soluta vero quo. Quis debitis hic cumque reprehenderit rerum soluta eius ipsam, nulla distinctio at, nobis quam minima mollitia blanditiis dolor maiores fuga earum laborum voluptatem, nemo error dolore! Rem repudiandae placeat non, magni suscipit amet nihil molestiae omnis. Ipsam, iusto rem voluptatibus natus, illum voluptatem libero incidunt ab quod corporis deserunt minus, exercitationem aspernatur sapiente illo quia? Iure doloribus accusantium sint quam, aliquam blanditiis assumenda, debitis officiis labore vero voluptas eum ipsum natus id ut incidunt explicabo sit hic quisquam corrupti reprehenderit nisi. Assumenda quas, reprehenderit culpa quam tenetur quaerat. Ea consectetur officiis fugit eius excepturi numquam similique commodi laudantium doloremque est placeat tempore, fugiat vero aspernatur eveniet nobis dignissimos hic sequi ullam consequatur temporibus nihil obcaecati! Dignissimos distinctio itaque, impedit soluta vel voluptatum magni eaque iusto ea dolorem tempore, temporibus, sapiente laborum at? Quaerat quasi qui sit quae. Eum, earum dolorem minima fugit blanditiis repudiandae odio autem, temporibus possimus quisquam hic quis quos beatae saepe veniam commodi cum voluptatibus, inventore nostrum eligendi animi! Similique tempore iusto accusantium consequatur reiciendis explicabo amet pariatur eum saepe sit ducimus, odit error ratione placeat autem et quae hic rerum quidem magni laudantium voluptatem.</p>
+
+    <h2>PR7 ::marker - za liste</h2>
+    <ul>
+        <li>Kava</li>
+        <li>Čaj</li>
+        <li>Mlijeko</li>
+    </ul>
+    <ol>
+        <li>Prvi</li>
+        <li>Drugi</li>
+        <li>Treći</li>
+    </ol>
+
+
+    <h2>PR8 ::marker - za liste</h2>
+    <ul class="greek1">
+        <li>Kava</li>
+        <li>Čaj</li>
+        <li>Mlijeko</li>
+    </ul>
+    <ol class="greek2">
+        <li>Prvi</li>
+        <li>Drugi</li>
+        <li>Treći</li>
+    </ol>
+
+
+    <h2>PR9 ::selection - boja selektiranih objekata</h2>
+    <p class="pr9">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quidem accusamus exercitationem amet maiores consectetur magnam officiis cum, adipisci nobis sed aliquid libero reiciendis? Corporis voluptatem ex est, id molestiae iusto deleniti eveniet laborum dolores magni, similique nisi ea. Sapiente consequatur ab, delectus nobis odit, est sint dignissimos laborum nemo eius natus alias ipsum itaque soluta enim rem nesciunt beatae molestias optio excepturi pariatur tempora omnis culpa dolore? Tenetur, consequuntur distinctio quisquam quas odit reiciendis, pariatur doloribus nesciunt ab accusantium voluptas inventore neque hic mollitia impedit ad optio, vel porro quam voluptate numquam necessitatibus blanditiis saepe! Officiis minima recusandae corrupti ad magni nisi autem id quo. Tempore ducimus autem, ad quaerat illum maxime provident cupiditate aliquam amet illo suscipit voluptatem, consequatur deleniti quibusdam, numquam a soluta consectetur magnam nostrum natus assumenda. Reprehenderit consequatur, accusantium hic voluptates ex ea eveniet iusto error sit saepe, facere, nemo beatae dicta a culpa omnis. Non, nihil. Commodi odit quos consectetur neque harum fugiat, magnam dolorum culpa libero sequi? Aut labore reprehenderit sapiente quo delectus iure voluptatum pariatur suscipit tenetur, atque facilis expedita neque nisi temporibus asperiores tempore beatae repellat enim odio iusto amet! Ut, in incidunt enim quibusdam at doloribus quos voluptatum fuga unde.</p>
+</body>
+</html>
