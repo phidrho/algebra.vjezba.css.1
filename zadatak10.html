@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 10 - pseudo klase i pseudo elementi</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            border: 2px solid gray;
+            padding: 10px;
+        }
+
+        .first-blue-letter::first-letter {
+            color: blue;
+            font-size: 2em;
+        }
+
+        ol.big-letters {
+            list-style-type: upper-alpha;
+        }
+
+        ol.lower-letters {
+            list-style-type: lower-alpha;
+        }
+
+        ::marker {
+            color: red;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px dotted red;
+        }
+
+        .correct::after {
+            content: " \2713";
+            font-size: larger;
+        }
+
+        ul.arrow {
+            list-style-type: "\2023";
+            font-size: larger;
+        }
+
+        a:visited {
+            color: magenta;
+        }
+
+        a:hover {
+            background-color: limegreen;
+            color: yellow;
+        }
+
+        a:active {
+            background-color: yellow;
+            color: limegreen;
+        }
+
+        .first-line::first-line {
+            color:blueviolet;
+        }
+
+        ::selection {
+            color: darkkhaki;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Zadatak 10 - pseudo klase i pseudo elementi</h1>
+
+    <h2>Zadatak 1</h2>
+    <section>
+        <p class="first-blue-letter">
+            1 Koji je glavni grad Hrvatske?
+        </p>
+        <ol class="big-letters">
+            <li>Koprivnica</li>
+            <li>Osijek</li>
+            <li class="correct">Zagreb</li>
+            <li>Rijeka</li>
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <p class="first-blue-letter">
+            2 Koja je rijeka koja protječe kroz Hrvatsku najduža?
+        </p>
+        <ol class="lower-letters">
+            <li>Mura</li>
+            <li class="correct">Sava</li>
+            <li>Drava</li>
+            <li>Dunav</li>
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <p class="first-blue-letter">
+            3 Pogledajte sljedeće video linkove
+        </p>
+        <ul class="arrow">
+            <li><a href="https://www.youtube.com/watch?v=wat7cjxq5Ag" target="_blank">Play bass guitar</a></li>
+            <li><a href="https://www.youtube.com/watch?v=jfKfPfyJRdk" target="_blank">Stop eating sugar</a></li>
+            <li><a href="https://www.youtube.com/watch?v=jzwYUzTV-gs" target="_blank">Treći</a></li>
+            <li><a href="https://www.youtube.com/watch?v=Cdj4N1Lr2_M" target="_blank">Četvrti</a></li>
+            <li><a href="https://www.youtube.com/watch?v=nGdqEIz4gHs" target="_blank">Peti</a></li>
+        </ul>
+    </section>
+    <hr>
+    <p class="first-line">Kraj testa!</p>
+</body>
+
+</html>
