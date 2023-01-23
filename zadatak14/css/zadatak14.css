@@ -50,3 +50,36 @@ div.header-line {
     left: 100%;
     background-color: blue;
 }
+
+.content {
+    line-height: 28px;
+}
+
+.tabs-container {
+    position: relative;
+    background: #2652cc;
+    width: 120px;
+    height: 100vh;
+    float: left;
+    z-index: 20;
+}
+
+.tabs-container label{
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid;
+    display: block;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tabs-container label:hover {
+    background: darkslateblue;
+}
+
+input[name="tab"] {
+    /*skrivanje radio buttona */
+    display: none;
+}
