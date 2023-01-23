@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 12 - pseudo klase i pseudo elementi</title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+
+        body {
+            background-color: #ccc;
+        }
+
+        section {
+            box-sizing: border-box;
+            margin: 0 auto;
+            width: 25rem;
+            background: white;
+            padding: 30px;
+            padding-bottom: 60px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h2 class="full-width">Traka pune širine s presudo elementima</h2>
+        <p>Koristeći pseudoelemente :before i :after, možemo proširiti prividnu pozadinu elementa h2 izvan &lt;section&gt; u kojem se nalazi.</p>
+        <p>Nažalost, ovo pokreće horizontalnu traku za pomicanje, tako da moramo postaviti i html i body elemente na overflow-x hidden.</p>
+        <p>Osim ako vam nije potrebna dodatna fleksibilnost oblikovanja obje strane (različite boje, visine, širine, gradijenti itd.), postoji jednostavniji pristup koji koristi negativne margine i ispune.</p>
+    </section>
+
+</body>
+
+</html>
