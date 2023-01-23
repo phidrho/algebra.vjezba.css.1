@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primjer 9 - kontekstualni selektori elementi</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Primjer 9.1 */
+        div p {
+            text-decoration: underline;
+        }
+
+        .naznaka p {
+            color: red;
+        }
+
+        .naznaka .tekst {
+            background-color: yellow;
+            font-style: italic;
+        }
+
+        /* Primjer 9.2 */
+        div>span {
+            color: red;
+            border-bottom: 2px solid blue;
+        }
+
+        /* Primjer 9.3 */
+        p+p {
+            text-transform: uppercase;
+        }
+
+        div+p+span {
+            /* ne primjenjuje se na "p" niti na div, samo na "span"!!! */
+            color: goldenrod;
+            text-transform: uppercase;
+        }
+
+        /* Primjer 9.4 */
+        p~p { /* primjenjuje se na sve "p"-ove osim na prvi "p"!!! */
+            border: 3px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Primjer 9 - kontekstualni selektori elementi</h1>
+
+    <h2>PR 9.1 - Indirektan selektor (razmak), npr. "div p"</h2>
+    <div>
+        <p>Paragraf unutar div-a, paragraf je prvi potomak div elementa, na njemu je primijenjena samo dekoracija
+            podcrtanosti.</p>
+    </div>
+
+    <div class="naznaka">
+        <p>Paragraf unutar div-a, paragraf je prvi potomak div elementa, na njemu je primijenjena nasljedna dekoracija
+            podcrtanosti, no također i svojstvo boje koje je defininirano u klasi za paragraf element!</p>
+        <p class="tekst">Paragraf unutar div-a, paragraf je prvi potomak div elementa, na njemu je primijenjena
+            nasljedna dekoracija podcrtanosti, nasljedna dekoracija boje, no također i svojstvo stila fonta "italic" i
+            pozadinske boje jer je primijenjeno svojstvo obje navedene klase .naznaka i .tekst</p>
+    </div>
+
+    <h2>PR 9.2 - Direktan selektor ("veće od"), npr. "div > p"</h2>
+    <div>
+        <span>Prvi span unutar div elementa, span element je prvi direktan potomak div elementa i na njega su
+            primijenjena svojstva</span>
+
+        <p><span>Drugi span unutar paragraf elementa, nije direktan potomak od div elementa i na njega se ne
+                primijenjuje
+                svojstvo css-a!!</span></p>
+
+        <span>Drugi span unutar div elementa, ovaj span element je također direktan potomak div elementa i na njega su
+            primijenjena svojstva</span>
+    </div>
+
+    <h2>PR 9.3 - Selektor - neposredan susjed ("+"), npr. "div + p"</h2>
+    <div>
+        <p>Prvi općeniti paragraf na kojem nema nikakve promjene stila.</p>
+        <p>Drugi paragraf koji je neposredan susjed prethodnog paragrafa i na njemu primijenjujemo svojstvo tekstualne
+            transformacije velikih slova.</p>
+        <hr>
+    </div>
+
+    <div>
+        <p>Ovo je paragraf unutar div elementa i na njega ne želimo primijeniti nikakva svojstva</p>
+    </div>
+    <hr>
+
+    <div>Ovo je drugi primjer u kojem je ovaj tekst unutar div elementa</div>
+    <p>Ovaj tekst je paragraf u istoj strukturi kao i div element.</p>
+    <span>Ovaj tekst je span element, u istoj strukturi kao prethodni div i paragraf element, te je na njega
+        primijenjeno svojstvo neposrednog susjeda.</span>
+    <hr>
+
+    <h2>PR 9.4 - Selektor - susjed ("~"), npr. "div ~ p"</h2>
+    <p>Prvi paragraf unutar strukture html-a</p>
+    <ul>
+        <li>Prvi</li>
+        <li>Drugi</li>
+        <li>Treći</li>
+        <li>Četvrti</li>
+    </ul>
+    <p>Drugi paragraf unutar strukture html-a, na istoj razini kao i prvi paragraf. Na ovom paragrafu želimo primijeniti
+        neko svojstvo stilova.</p>
+
+</body>
+
+</html>
