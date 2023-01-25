@@ -7,7 +7,7 @@
     <title>Zadatak 14a - stranica sa vertikalnim menijem</title>
     <link rel="stylesheet" href="./css/zadatak14.css">
     <link rel="stylesheet" href="./css/card-style.css">
-
+    <link rel="stylesheet" href="./css/sidebar-style.css">
 </head>
 
 <body>
@@ -17,128 +17,165 @@
         </div>
     </header>
 
-    <div class="content">
+    <div class="menu-wrapper"> <!-- trebao bi se zvati general content -->
 
-        <section class="tabs-container">
-            <label for="tab1">Priroda</label>
-            <label for="tab2">Cvijeće</label>
-            <label for="tab3">Planine</label>
-            <label for="tab4">Zgrade</label>
-            <label for="tab5">Ceste</label>
-            <label for="tab6">Šume</label>
-            <label for="tab7">Cards iz Zadatka15</label>
-        </section>
 
-        <input name="tab" id="tab1" type="radio" checked>
-        <section class="tab-content">
-            <h2>Priroda</h2>
-            <p>Neki moj tekst koji je povezan sa prirodom</p>
-            <img src="img/sea.jpg" alt="More" width=200;>
-            <p>Opis koji će se odnositi na prethodnu sliku prirode</p>
-        </section>
+        <!-- hamburger menu -->
+        <!-- "data-function" je naš proizvoljno izmišljeni atribut -->
+        <input data-function="swipe" id="swipe" type="checkbox">
+        <label data-function="swipe" for="swipe">&#xf0c9</label>
 
-        <input name="tab" id="tab2" type="radio">
-        <section class="tab-content">
-            <h2>Cvijeće</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis officia asperiores fugit repellat sit ut
-                ipsa, tenetur inventore accusantium esse, ducimus aliquam, dolor quasi et porro beatae architecto
-                veritatis. Dolorem beatae sit ullam. Asperiores veniam, consectetur eveniet nulla fuga numquam mollitia
-                accusantium saepe ipsa, doloribus aliquid aspernatur obcaecati natus cupiditate!</p>
-            <img src="img/flowers.jpg" alt="Cvijeće" width=200;>
-        </section>
 
-        <input name="tab" id="tab3" type="radio">
-        <section class="tab-content">
-            <h2>Planine</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis officia asperiores fugit repellat sit ut
-                ipsa, tenetur inventore accusantium esse, ducimus aliquam, dolor quasi et porro beatae architecto
-                veritatis. Dolorem beatae sit ullam. Asperiores veniam, consectetur eveniet nulla fuga numquam mollitia
-                accusantium saepe ipsa, doloribus aliquid aspernatur obcaecati natus cupiditate!</p>
-            <img src="img/mountains.jpg" alt="Planine" width=200;>
-        </section>
+        <!-- naš vertikalni menu -->
+        <div class="sidebar">
+            <section class="tabs-container">
+                <label for="tab1">Priroda</label>
+                <label for="tab2">Cvijeće</label>
+                <label for="tab3">Planine</label>
+                <label for="tab4">Zgrade</label>
+                <label for="tab5">Ceste</label>
+                <label for="tab6">Šume</label>
+                <label for="tab7">Cards iz Zadatka15</label>
+            </section>
+        </div>
 
-        <input name="tab" id="tab4" type="radio">
-        <section class="tab-content">
-            <h2>Zgrade</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis officia asperiores fugit repellat sit ut
-                ipsa, tenetur inventore accusantium esse, ducimus aliquam, dolor quasi et porro beatae architecto
-                veritatis. Dolorem beatae sit ullam. Asperiores veniam, consectetur eveniet nulla fuga numquam mollitia
-                accusantium saepe ipsa, doloribus aliquid aspernatur obcaecati natus cupiditate!</p>
-            <img src="img/buildings.jpg" alt="Zgrade" width=200;>
-        </section>
 
-        <input name="tab" id="tab5" type="radio">
-        <section class="tab-content">
-            <h2>Ceste</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis officia asperiores fugit repellat sit ut
-                ipsa, tenetur inventore accusantium esse, ducimus aliquam, dolor quasi et porro beatae architecto
-                veritatis. Dolorem beatae sit ullam. Asperiores veniam, consectetur eveniet nulla fuga numquam mollitia
-                accusantium saepe ipsa, doloribus aliquid aspernatur obcaecati natus cupiditate!</p>
-            <img src="img/roads.jpg" alt="Ceste" width=200;>
-        </section>
+        <!-- ovo brišemo
+            <section class="tabs-container">
+                <label for="tab1">Priroda</label>
+                <label for="tab2">Cvijeće</label>
+                <label for="tab3">Planine</label>
+                <label for="tab4">Zgrade</label>
+                <label for="tab5">Ceste</label>
+                <label for="tab6">Šume</label>
+                <label for="tab7">Cards iz Zadatka15</label>
+            </section>
+-->
+        <div class="content">
+            <input name="tab" id="tab1" type="radio" checked>
+            <section class="tab-content">
+                <h2>Priroda</h2>
+                <p>Neki moj tekst koji je povezan sa prirodom</p>
+                <img src="img/sea.jpg" alt="More" width=200;>
+                <p>Opis koji će se odnositi na prethodnu sliku prirode</p>
+            </section>
 
-        <input name="tab" id="tab6" type="radio">
-        <section class="tab-content">
-            <h2>Šume</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis officia asperiores fugit repellat sit ut
-                ipsa, tenetur inventore accusantium esse, ducimus aliquam, dolor quasi et porro beatae architecto
-                veritatis. Dolorem beatae sit ullam. Asperiores veniam, consectetur eveniet nulla fuga numquam mollitia
-                accusantium saepe ipsa, doloribus aliquid aspernatur obcaecati natus cupiditate!</p>
-            <img src="img/forest.jpg" alt="Šume" width=200;>
-        </section>        
-        <input name="tab" id="tab7" type="radio">
-        <section class="tab-content">
-            <div class="container">
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content"><img src="./img/design_128.png" alt="design">
-                            <h3>Design</h3>
+            <input name="tab" id="tab2" type="radio">
+            <section class="tab-content">
+                <h2>Cvijeće</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis officia asperiores fugit repellat sit
+                    ut
+                    ipsa, tenetur inventore accusantium esse, ducimus aliquam, dolor quasi et porro beatae architecto
+                    veritatis. Dolorem beatae sit ullam. Asperiores veniam, consectetur eveniet nulla fuga numquam
+                    mollitia
+                    accusantium saepe ipsa, doloribus aliquid aspernatur obcaecati natus cupiditate!</p>
+                <img src="img/flowers.jpg" alt="Cvijeće" width=200;>
+            </section>
+
+            <input name="tab" id="tab3" type="radio">
+            <section class="tab-content">
+                <h2>Planine</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis officia asperiores fugit repellat sit
+                    ut
+                    ipsa, tenetur inventore accusantium esse, ducimus aliquam, dolor quasi et porro beatae architecto
+                    veritatis. Dolorem beatae sit ullam. Asperiores veniam, consectetur eveniet nulla fuga numquam
+                    mollitia
+                    accusantium saepe ipsa, doloribus aliquid aspernatur obcaecati natus cupiditate!</p>
+                <img src="img/mountains.jpg" alt="Planine" width=200;>
+            </section>
+
+            <input name="tab" id="tab4" type="radio">
+            <section class="tab-content">
+                <h2>Zgrade</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis officia asperiores fugit repellat sit
+                    ut
+                    ipsa, tenetur inventore accusantium esse, ducimus aliquam, dolor quasi et porro beatae architecto
+                    veritatis. Dolorem beatae sit ullam. Asperiores veniam, consectetur eveniet nulla fuga numquam
+                    mollitia
+                    accusantium saepe ipsa, doloribus aliquid aspernatur obcaecati natus cupiditate!</p>
+                <img src="img/buildings.jpg" alt="Zgrade" width=200;>
+            </section>
+
+            <input name="tab" id="tab5" type="radio">
+            <section class="tab-content">
+                <h2>Ceste</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis officia asperiores fugit repellat sit
+                    ut
+                    ipsa, tenetur inventore accusantium esse, ducimus aliquam, dolor quasi et porro beatae architecto
+                    veritatis. Dolorem beatae sit ullam. Asperiores veniam, consectetur eveniet nulla fuga numquam
+                    mollitia
+                    accusantium saepe ipsa, doloribus aliquid aspernatur obcaecati natus cupiditate!</p>
+                <img src="img/roads.jpg" alt="Ceste" width=200;>
+            </section>
+
+            <input name="tab" id="tab6" type="radio">
+            <section class="tab-content">
+                <h2>Šume</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis officia asperiores fugit repellat sit
+                    ut
+                    ipsa, tenetur inventore accusantium esse, ducimus aliquam, dolor quasi et porro beatae architecto
+                    veritatis. Dolorem beatae sit ullam. Asperiores veniam, consectetur eveniet nulla fuga numquam
+                    mollitia
+                    accusantium saepe ipsa, doloribus aliquid aspernatur obcaecati natus cupiditate!</p>
+                <img src="img/forest.jpg" alt="Šume" width=200;>
+            </section>
+            <input name="tab" id="tab7" type="radio">
+            <section class="tab-content">
+                <div class="container">
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content"><img src="./img/design_128.png" alt="design">
+                                <h3>Design</h3>
+                            </div>
+                        </div>
+
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odit pariatur ab
+                                    adipisci
+                                    recusandae eligendi!</p>
+                                <a href="#">Read more</a>
+                            </div>
                         </div>
                     </div>
-        
-                    <div class="face face2">
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odit pariatur ab adipisci
-                                recusandae eligendi!</p>
-                            <a href="#">Read more</a>
+
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content"><img src="./img/launch_128.png" alt="launch">
+                                <h3>Launch</h3>
+                            </div>
+                        </div>
+
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odit pariatur ab
+                                    adipisci
+                                    recusandae eligendi!</p>
+                                <a href="#">Read more</a>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content"><img src="./img/code_128.png" alt="code">
+                                <h3>Code</h3>
+                            </div>
+                        </div>
+
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odit pariatur ab
+                                    adipisci
+                                    recusandae eligendi!</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-        
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content"><img src="./img/launch_128.png" alt="launch">
-                            <h3>Launch</h3>
-                        </div>
-                    </div>
-        
-                    <div class="face face2">
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odit pariatur ab adipisci
-                                recusandae eligendi!</p>
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="face face1">
-                        <div class="content"><img src="./img/code_128.png" alt="code">
-                            <h3>Code</h3>
-                        </div>
-                    </div>
-        
-                    <div class="face face2">
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo odit pariatur ab adipisci
-                                recusandae eligendi!</p>
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-        
-            </div>
-        </section>        
+            </section>
+        </div>
     </div>
 </body>
 
