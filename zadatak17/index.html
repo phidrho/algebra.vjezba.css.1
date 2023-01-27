@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zadatak 17 - opis</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadatak 17 - opis</title>
-
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+        <link rel="stylesheet" href="./css/responsive-sidebar-style.css">
+    </head>
 
     <body>
-
+        <div class="header"></div>
+        <input type="checkbox" name="open-sidebar-menu" id="open-sidebar-menu">
+        <label for="open-sidebar-menu" class="sidebar-icon-toggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebar-menu">
+            <ul class="sidebar-menu-inner">
+                <li>Ime Prezime <span>Web Developer</span></li>
+                <li><a href="#1">Company</a></li>
+                <li><a href="#2">Instagram</a></li>
+                <li><a href="#3" target="_blank">Twitter</a></li>
+                <li><a href="#4">YouTube</a></li>
+                <li><a href="#5" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
     </body>
-
 </html>
