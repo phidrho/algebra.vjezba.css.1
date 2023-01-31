@@ -51,13 +51,13 @@
 @media all and (max-width: 800px) {
     .navigation {
         justify-content: space-around;
+        padding: 0;
     }
 }
 
 @media all and (max-width: 600px) {
     .navigation {
         flex-flow: column wrap;
-        padding: 0;
     }
 
     .navigation a {
@@ -69,5 +69,69 @@
 
     .navigation li:list-of-type a {
         border-bottom: none;
+    }
+}
+
+/* PRIMJER 3  - Flex Layout */
+
+body {
+    padding: 2em;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: tomato;
+}
+
+.main {
+    text-align: left;
+    background: deepskyblue;
+}
+
+.aside-1 {
+    background: gold;
+}
+
+.aside-2 {
+    background: hotpink;
+}
+
+.footer {
+    background: lightgreen;
+}
+
+@media all and (min-width: 600px) {
+    .aside { flex: 1 auto; } /* oba sidebara dijele red */
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 3 0px; /* glavni element zauzima duplo više prostora od druga dva */
+    }
+
+    /* redosljed prikaza */
+
+    .aside-1 {
+        order: 1;
+    }
+    .main {
+        order: 2;
+    }
+    .aside-2 {
+        order: 3;
+    }
+    .footer {
+        order: 4;
     }
 }
