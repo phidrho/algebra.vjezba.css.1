@@ -20,74 +20,52 @@
                 background-color: white;
             }
 
-            header {
-                position: relative;
-                background-color: black;
-                color: white;
-                text-align: center;
-                font-size: large;
-            }
-
-            header::before {
-                content: "test";
-                display: block;
-                translate: -100%;
-                left: 0;
-                background-color: red;
-            }
-
-            header::after {
-                content: "test";
-                display: block;
-                translate: 100%;
-                background-color: green;
-            }
-
             section {
                 padding: 40px;
             }
 
-            .par {
-                background-color: bisque;
-            }
-
-            .k1 {
-                background-color: chartreuse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+            .header {
+                background-color: black;
                 text-align: center;
-                z-index: 0;
+                color: white;
+                font-size: large;
+                width: 600px;
+                margin: 0 40px 0 -40px;
             }
 
-            .k1::before {
-                content:"jabuka";
-                background-color: cadetblue;
+            .header::before {
+                content: "-";
+                background-color: red;
+                position: absolute;
+                width: calc((100% - 600px) / 2);
+                left: 0;
                 z-index: -1;
+                color: red;
             }
 
-            .k1::after {
-                content:"kruška";
-                background-color: orange;
-                z-index: 1;
+            .header::after {
+                content: "-";
+                background-color: green;
+                position: absolute;
+                left: calc(100% - (100% - 600px) / 2);
+                width: calc((100% - 600px) / 2);
+                z-index: -1;
+                color: green;
             }
-
         </style>
     </head>
 
     <body>
 
         <main>
-
-            <header>Traka pune širine s pseudo elementima</header>
             <section>
+                <!-- <header class="header">Traka pune širine s pseudo elementima</header> -->
+                <h1 class="header">Traka pune širine s pseudo elementima</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis voluptates. Accusantium ducimus sequi voluptatum officia debitis nisi explicabo maiores repellat suscipit? Ab, incidunt voluptatibus? Sed earum, odit eaque perspiciatis quibusdam hic quam dolore nisi provident voluptatum ex unde molestiae laboriosam qui repudiandae pariatur temporibus, minima tempora tempore sit. Earum officia, unde, repellendus esse provident facere nulla nobis, atque molestiae magnam sint eum ipsam hic animi ex. Magni explicabo nostrum nemo minima repudiandae tempore distinctio accusamus nisi. Dolorem non sequi, rem voluptate saepe odit esse fuga sed dolorum voluptatem ducimus quaerat, consequatur quibusdam doloremque eum incidunt. Vero possimus facilis excepturi.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellendus et reprehenderit libero voluptate eligendi, ab ipsum eius expedita, corporis ducimus nostrum iste dolores dolor. Dolorum quo et eum aperiam perspiciatis. Consequuntur sunt aliquid praesentium esse magni dolores voluptates officia deserunt harum sed dolorum voluptatibus laudantium quia rerum molestias debitis magnam minima nemo incidunt exercitationem saepe ipsam, error nam. Rerum, vero debitis tempore illo incidunt voluptatibus necessitatibus veniam doloribus. Id suscipit perspiciatis praesentium. Laboriosam, quod, sapiente similique ad quis dolores nesciunt sed eligendi omnis architecto consequuntur repellat! Modi odio recusandae alias impedit perferendis. Nam atque nulla dolores sunt velit molestiae?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque vitae veritatis molestiae sed explicabo placeat atque quia iusto perferendis eaque consequuntur in, cum ea minima, illo repellendus nam provident commodi ipsum nostrum, enim voluptate. In distinctio magni enim aut consequuntur vero itaque tenetur explicabo eligendi molestias. Quasi cupiditate reiciendis sapiente accusamus voluptatibus! Praesentium corporis optio consectetur ullam iure consequuntur a excepturi impedit modi. Culpa nesciunt consequatur vitae perferendis natus, ratione exercitationem maiores deleniti fuga, consectetur veritatis voluptatum nulla quisquam nobis, quae eaque quibusdam quia dolores saepe sequi inventore dolorem voluptatem modi. Quia quae laudantium suscipit harum maiores magnam, exercitationem placeat?</p>
             </section>
         </main>
-
-        <div class="par">
-            <div class="k1">test1</div>
-            nastavak teksta
-        </div>
 
     </body>
 

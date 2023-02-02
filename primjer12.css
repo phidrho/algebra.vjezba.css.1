@@ -1,0 +1,48 @@
+* {
+    border: 1px solid black;
+}
+
+/* PRIMJER 3 */
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: main;
+}
+
+.item-c {
+    grid-area: sidebar;
+}
+
+.item-d {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+}
+
+/* PRIMJER 4 */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.grid > div {
+    background: #EDE7F6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+body {
+    margin: 2rem;
+    font: 12px system-ui;
+}
