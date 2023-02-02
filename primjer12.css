@@ -2,9 +2,7 @@
     border: 1px solid black;
 }
 
-
 /* PRIMJER 3 */
-
 .item-a {
     grid-area: header;
 }
