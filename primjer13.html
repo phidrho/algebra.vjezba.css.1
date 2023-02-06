@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primjer 13 - TRANSFORM TRANSLATE</title>
+    <style>
+
+        #div-1-1, #div-2-1,
+        #div-1-2, #div-2-2,
+        #div-1-3, #div-2-3,
+        #div-1-4, #div-2-4,
+        #div-1-5, #div-2-5,
+        #div-1-6, #div-2-6,
+        #div-1-7, #div-2-7,
+        #div-1-8, #div-2-8,
+        #div-1-9, #div-2-9, 
+        #div-1-11, #div-2-11, 
+        #div-1-12, #div-2-12 {
+
+        }
+
+        /* PRIMJER 1 */
+        #div-1-1 {
+            background-color: black;
+        }
+
+        #div-2-1 {
+            transform: translate(-100px, -75px);
+            background-color: tomato;
+            opacity: 0.8;
+        }
+
+        /* PRIMJER 2 */
+        #div-1-2 {
+            background-color: black;
+        }
+
+        #div-2-2 {
+            transform: translate(-100px, -75px);
+            background-color: tomato;
+            opacity: 0.8;
+        }
+
+        /* PRIMJER 3 */
+        #div-1-3 {
+
+        }
+
+        #div-2-3 {
+
+        }
+
+        /* PRIMJER 4 */
+        #div-1-4 {
+            background-color: black;
+        }
+
+        #div-2-4 {
+            transform: translate(-100px, -75px);
+            background-color: tomato;
+            opacity: 0.8;
+        }
+
+        /* PRIMJER 5 */
+        #div-1-5 {
+
+        }
+
+        #div-2-5 {
+
+        }
+
+        /* PRIMJER 6 */
+        #div-1-6 {
+
+        }
+
+        #div-2-6 {
+
+        }
+
+        /* PRIMJER 7 */
+        #div-1-7 {
+
+        }
+
+        #div-2-7 {
+
+        }
+
+        /* PRIMJER 8 */
+        #div-1-8 {
+
+        }
+
+        #div-2-8 {
+
+        }
+
+        /* PRIMJER 9 */
+        #div-1-9 {
+
+        }
+
+        #div-2-9 {
+
+        }
+
+        /* PRIMJER 10 rotate */
+        div#div-1-10 {
+            line-height: 150px;
+        }
+
+        #containter {
+            top: 25px;
+            left: 25px;
+            position: absolute;
+        }
+
+        .group {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+        }
+
+        .original, .transformed {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            background-color: black;
+            position: absolute;
+        }
+
+        .transformed {
+            background-color: tomato;
+            opacity: 0.8;            
+        }
+
+        #transformed-1 {
+            transform: rotate(45deg);
+        }
+        #transformed-2 {
+            transform: rotate(1.2rad);
+        }
+        #transformed-3 {
+            transform: rotate(0.25turn);
+        }
+        
+        /* PRIMJER 11 rotate */
+        #div-1-11 {
+
+        }
+
+        #div-2-11 {
+
+        }
+
+        /* PRIMJER 12 rotate */
+        #div-1-12 {
+
+        }
+
+        #div-2-12 {
+
+        }
+
+        /* PRIMJER 13 */
+        #div-1-13 {
+            transform: translate(100px, 20px) scale(0.8) rotate(30deg);
+            background-color: #FF5C35;
+            opacity: 0.8;
+        }
+
+        #div-2-13 {
+
+        }
+
+        /* PRIMJER 14 rotate i perspective */
+        div#div-1-14 {
+            line-height: 150px;
+        }
+
+        .group-14 {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+        }
+
+        .original-14, .transformed-14 {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            background-color: black;
+            position: absolute;
+        }
+
+        .original-14 {background-color: black;}
+
+        .transformed-14 {
+            background-color: tomato;
+            opacity: 0.8;
+        }
+
+        #container-14 {
+            top: 25px;
+            left: 25px;
+            position: absolute;
+        }
+
+        #transformed-14-1 {
+            transform: perspective(500px) rotateY(40deg);
+        }
+        #transformed-14-2 {
+            transform: perspective(500px) rotateY(60deg);
+        }
+        #transformed-14-3 {
+            transform: perspective(500px) rotateY(80deg);
+        }
+
+        /* PRIMJER 15 transform-origin */
+
+        #container-15 {
+            top: 100px;
+            left: 125px;
+            position: absolute;
+        }
+
+        #transformed-15-1 {
+            transform: rotateY(45deg);
+            transform-origin: top left;
+        }
+        #transformed-15-2 {
+            transform: rotateY(45deg);
+            transform-origin: bottom left;
+        }
+
+        div {
+            line-height: 150px;
+        }
+
+        .group-15 {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+        }
+
+        .original-15, .transformed-15 {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            background-color: green;
+            position: absolute;
+        }
+
+        .original-15 {background-color: black;}
+
+        .transformed-15 {
+            background-color: tomato;
+            opacity: 0.8;
+        }
+
+        /* PRIMJER 16 */
+        #div-1-16 {
+
+        }
+
+        #div-2-16 {
+
+        }
+
+        /* PRIMJER 17 */
+        div#div-1-17 {
+            transition: transform 0.5s;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            border-radius: 20px;
+            position: absolute;
+            color: white;
+            background-color: tomato;
+            text-align: center;
+            top: 25px;
+            left: 25px;
+        }
+
+        div#div-1-17:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        /* PRIMJER 18 */
+        div#div-1-18 {
+            transition: transform 2s;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            border-radius: 20px;
+            position: absolute;
+            color: white;
+            background-color: tomato;
+            text-align: center;
+            top: 25px;
+            left: 25px;
+        }
+
+        div#div-1-18:hover {
+            /*transform: rotate(720deg);*/
+            transform: scale(2) rotate(720deg);
+        }
+
+        /* PRIMJER 19 */
+        div#div-1-19 {
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            border-radius: 20px;
+            position: absolute;
+            color: white;
+            background-color: tomato;
+            text-align: center;
+            top: 100px;
+            left: 100px;
+            animation: pulsiraj 1s infinite; /* riječ "pulsiraj" biramo sami i definiramo @keyframe za tu riječ*/
+            animation-direction: alternate;
+        }
+
+        @keyframes pulsiraj {
+            0%{
+                transform: scale(0.75);
+            }
+            100% {
+                transform: scale(1.5);
+            }
+        }
+
+        /* PRIMJER 20 */
+    </style>
+</head>
+
+<body>
+    <h1>TRANSFORM: 2D CSS TRANSLACIJE, ROTACIJE I TRANSFORMACIJE</h1>
+    <h2>Primjer 1 - dopuniti!!!!!!!!!!!!!</h2>
+    <div id="div-1-1">original</div>
+    <div id="div-2-1">transformirani</div>
+
+    <h2>Primjer 2 - negativne vrijednosti</h2>
+    <div id="div-1-2">original</div>
+    <div id="div-2-2">transformirani</div>
+
+    <h2>Primjer 3 - postoci</h2>
+    <div id="div-1-3">original</div>
+    <div id="div-2-3">transformirani</div>
+
+    <h2>Primjer 4 - translateX</h2>
+    <div id="div-1-4">original</div>
+    <div id="div-2-4">transformirani</div>
+
+    <h2>Primjer 5 - translateY</h2>
+    <div id="div-1-5">original</div>
+    <div id="div-2-5">transformirani</div>
+
+    <h2>Primjer 6 - scale</h2>
+    <div id="div-1-6">original</div>
+    <div id="div-2-6">transformirani</div>
+
+    <h2>Primjer 7 - scale(x, y)</h2>
+    <div id="div-1-7">original</div>
+    <div id="div-2-7">transformirani</div>
+
+    <h2>Primjer 8 - scaleX</h2>
+    <div id="div-1-8">original</div>
+    <div id="div-2-8">transformirani</div>
+    
+    <h2>Primjer 9 - scaleY</h2>
+    <div id="div-1-9">original</div>
+    <div id="div-2-9">transformirani</div>
+    
+    <h2>Primjer 10 - rotate()</h2>
+    <div id="container">
+        <div class="group">
+            <div class="original">original</div>
+            <div class="transformed" id="transformed-1">transformed</div>
+        </div>
+        <div class="group">
+            <div class="original">original</div>
+            <div class="transformed" id="transformed-2">transformed</div>
+        </div>
+        <div class="group">
+            <div class="original">original</div>
+            <div class="transformed" id="transformed-3">transformed</div>
+        </div>
+    </div>
+
+    <h2>Primjer 11 - skew()</h2>
+    <div id="div-1-11">original</div>
+    <div id="div-2-11">transformirani</div>
+
+    
+    <h2>Primjer 12 - skewX(), skewY()</h2>
+    <div id="div-1-12">original</div>
+    <div id="div-2-12">transformirani</div>
+
+    <h2>Primjer 13 - kombinacija translate scale i rotate</h2>
+    <div id="div-1-13">original</div>
+    <div id="div-2-13">transformirani</div>
+
+    
+    <h2>Primjer 14 - rotate i perspektiva</h2>
+    <div id="container-14">
+        <div class="group-14">
+            <div class="original-14">original</div>
+            <div class="transformed-14" id="transformed-14-1">transformed</div>
+        </div>
+        <div class="group-14">
+            <div class="original-14">original</div>
+            <div class="transformed-14" id="transformed-14-2">transformed</div>
+        </div>
+        <div class="group-14">
+            <div class="original-14">original</div>
+            <div class="transformed-14" id="transformed-14-3">transformed</div>
+        </div>
+    </div>
+
+    
+    <h2>Primjer 15 - transform-origin</h2>
+    <div id="container-15">
+        <div class="group-15">
+            <div class="original-15">original</div>
+            <div class="transformed-15" id="transformed-15-1">transformed</div>
+        </div>
+        <div class="group-15">
+            <div class="original-15">original</div>
+            <div class="transformed-15" id="transformed-15-2">transformed</div>
+        </div>
+    </div>
+
+    
+    <h2>Primjer 16 - transform-origin kombinirani</h2>
+    <div id="div-1-16">original</div>
+    <div id="div-2-16">transformirani</div>
+
+
+    <h2>Primjer 17 - transform animacija na hover</h2>
+    <div id="div-1-17">animirani</div>
+
+    <h2>Primjer 18 - transform animacija na hover - rotacija i  kombinacija</h2>
+    <div id="div-1-18">animirani</div>
+
+    <h2>Primjer 19 - transform animacija s keyframeovima</h2>
+    <div id="div-1-19">pulsirajući</div>
+
+    <h2>Primjer 20 - matrice</h2>
+</body>
+
+</html>
