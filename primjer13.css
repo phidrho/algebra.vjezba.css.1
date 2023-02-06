@@ -1,0 +1,462 @@
+* {
+    border: 1px solid black;
+}
+
+h2 {
+    color: black;
+}
+
+.primjer {
+    position: relative;
+    height: 500px;
+}
+
+.primjer-okvir {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* PRIMJER 1 */
+#div-1-1 {
+    background-color: black;
+}
+
+#div-2-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100px, 75px);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* PRIMJER 2 */
+.pr2 {
+    top: 100px;
+    left: 100px;
+}
+
+#div-1-2 {
+    background-color: black;
+}
+
+#div-2-2 {
+    position: absolute;
+    transform: translate(-100px, -75px);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* PRIMJER 3 */
+#div-1-3 {
+    background-color: black;
+}
+
+#div-2-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100%, 50%);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* PRIMJER 4 */
+#div-1-4 {
+    background-color: black;
+}
+
+#div-2-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100px);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+#div-1-5 {
+    background-color: black;
+}
+
+#div-2-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(75px);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* PRIMJER 6 */
+.pr6 {
+    top: 100px;
+    left: 100px;
+}
+
+#div-1-6a {
+    background-color: black;
+}
+
+#div-2-6a {
+    position: absolute;
+    transform: scale(2);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+
+#div-1-6b {
+    background-color: black;
+}
+
+#div-2-6b {
+    position: absolute;
+    transform: scale(0.5);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* PRIMJER 7 */
+.pr7 {
+    top: 50px;
+    left: 175px;
+}
+
+#div-1-7 {
+    background-color: black;
+}
+
+#div-2-7 {
+    position: absolute;
+    transform: scale(3, 1.5);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* PRIMJER 8 */
+.pr8 {
+    top: 50px;
+    left: 100px;
+}
+
+#div-1-8 {
+    background-color: black;
+}
+
+#div-2-8 {
+    position: absolute;
+    transform: scaleX(2);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* PRIMJER 9 */
+.pr9 {
+    top: 100px;
+    left: 10px;
+}
+
+#div-1-9 {
+    background-color: black;
+}
+
+#div-2-9 {
+    position: absolute;
+    transform: scaleY(2);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* PRIMJER 10 rotate */
+#containter-10 {
+    top: 25px;
+    left: 25px;
+    position: absolute;
+}
+
+.group-10 {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+}
+
+.original-10,
+.transformed-10 {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+}
+
+.transformed-10 {
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+#transformed-1-10 {
+    transform: rotate(45deg);
+}
+
+#transformed-2-10 {
+    transform: rotate(1.2rad);
+}
+
+#transformed-3-10 {
+    transform: rotate(0.25turn);
+}
+
+/* PRIMJER 11 */
+#div-1-11 {
+    background-color: black;
+}
+
+#div-2-11 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skew(50deg, -15deg);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* PRIMJER 12 */
+#div-1-12 {
+    background-color: black;
+}
+
+#div-2-12 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewX(50deg);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+#div-1-12b {
+    background-color: black;
+}
+
+#div-2-12b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewY(50deg);
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* PRIMJER 13 */
+#div-1-13 {
+    background-color: black;
+}
+
+#div-2-13 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100px, 20px) scale(0.8) rotate(30deg);
+    background-color: #FF5C35;
+    opacity: 0.8;
+}
+
+/* PRIMJER 14 rotate i perspective */
+.group-14 {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+}
+
+.original-14,
+.transformed-14 {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+}
+
+.original-14 {
+    background-color: black;
+}
+
+.transformed-14 {
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+#container-14 {
+    line-height: 150px;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+}
+
+#transformed-1-14 {
+    transform: perspective(500px) rotateY(40deg);
+}
+
+#transformed-2-14 {
+    transform: perspective(500px) rotateY(60deg);
+}
+
+#transformed-3-14 {
+    transform: perspective(500px) rotateY(80deg);
+}
+
+/* PRIMJER 15 transform-origin */
+
+#container-15 {
+    line-height: 150px;
+    top: 100px;
+    left: 125px;
+    position: absolute;
+}
+
+#transformed-1-15 {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+#transformed-2-15 {
+    transform: rotate(45deg);
+    transform-origin: bottom left;
+}
+
+.group-15 {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+}
+
+.original-15,
+.transformed-15 {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: green;
+    position: absolute;
+}
+
+.original-15 {
+    background-color: black;
+}
+
+.transformed-15 {
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+/* zadavanje točne koordinate ishodišta osi rotacije */
+
+#div-1-15 {
+    background-color: black;
+}
+
+#div-2-15 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 75px 150px;
+    background-color: #FF5C35;
+    opacity: 0.8;
+}
+
+
+
+/* PRIMJER 16
+#div-1-16 {}
+
+#div-2-16 {}
+
+*/
+
+/* PRIMJER 17
+div#div-1-17 {
+    transition: transform 0.5s;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    top: 25px;
+    left: 25px;
+}
+
+div#div-1-17:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+*/
+
+
+/* PRIMJER 18
+div#div-1-18 {
+    transition: transform 2s;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    top: 25px;
+    left: 25px;
+}
+
+div#div-1-18:hover {
+    /*transform: rotate(720deg);
+    transform: scale(2) rotate(720deg);
+}
+*/
+
+
+/* PRIMJER 19
+div#div-1-19 {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    top: 100px;
+    left: 100px;
+    animation: pulsiraj 1s infinite;
+    /* riječ "pulsiraj" biramo sami i definiramo @keyframe za tu riječ
+    animation-direction: alternate;
+}
+
+@keyframes pulsiraj {
+    0% {
+        transform: scale(0.75);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+*/
+
+
+/* PRIMJER 20 */
