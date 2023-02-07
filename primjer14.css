@@ -1,3 +1,9 @@
+/*
+* {
+    border: 1px solid black;
+}
+*/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,7 +17,7 @@ body {
     text-align: center;
 }
 
-.containter div {
+.container div {
     font-weight: normal;
     text-align: center;
     background-color: lightgoldenrodyellow;
