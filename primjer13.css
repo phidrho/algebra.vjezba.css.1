@@ -376,17 +376,8 @@ h2 {
     opacity: 0.8;
 }
 
-
-
-/* PRIMJER 16
-#div-1-16 {}
-
-#div-2-16 {}
-
-*/
-
-/* PRIMJER 17
-div#div-1-17 {
+/* PRIMJER 16 */
+div#div-1-16 {
     transition: transform 0.5s;
     width: 150px;
     height: 150px;
@@ -400,16 +391,13 @@ div#div-1-17 {
     left: 25px;
 }
 
-div#div-1-17:hover {
+div#div-1-16:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-*/
-
-
-/* PRIMJER 18
-div#div-1-18 {
+/* PRIMJER 17 */
+div#div-1-17 {
     transition: transform 2s;
     width: 150px;
     height: 150px;
@@ -423,15 +411,13 @@ div#div-1-18 {
     left: 25px;
 }
 
-div#div-1-18:hover {
-    /*transform: rotate(720deg);
+div#div-1-17:hover {
+    /*transform: rotate(720deg); */
     transform: scale(2) rotate(720deg);
 }
-*/
 
-
-/* PRIMJER 19
-div#div-1-19 {
+/* PRIMJER 18 */
+div#div-1-18 {
     width: 150px;
     height: 150px;
     line-height: 150px;
@@ -443,7 +429,7 @@ div#div-1-19 {
     top: 100px;
     left: 100px;
     animation: pulsiraj 1s infinite;
-    /* riječ "pulsiraj" biramo sami i definiramo @keyframe za tu riječ
+    /* riječ "pulsiraj" biramo sami i definiramo @keyframe za tu riječ */
     animation-direction: alternate;
 }
 
@@ -456,7 +442,25 @@ div#div-1-19 {
         transform: scale(1.5);
     }
 }
-*/
+
+/* PRIMJER 19a */
+#div-1-19a {
+    background-color: black;
+}
 
 
-/* PRIMJER 20 */
+#div-1-19a:hover {
+    transform: rotate(45deg) translate(24px, 25px);
+}
+
+/* PRIMJER 19b */
+#div-1-19b {
+    background-color: black;
+}
+
+#div-1-19b:hover {
+    transform: matrix(
+        0.7071067811865475, 0.7071067811865476, -0.7071067811865476,
+        0.7071067811865475, -0.7071067811865497, 34.648232278140824
+    )
+}
